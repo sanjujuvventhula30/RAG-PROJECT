@@ -1,1 +1,15 @@
 data/
+
+.env
+.env.*
+
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+chroma_db/
+data/chroma_db/
+
+!manual-rag/data/
+!manual-rag/data/sample.pdf
