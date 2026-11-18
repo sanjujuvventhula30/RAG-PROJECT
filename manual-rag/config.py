@@ -19,6 +19,13 @@ if not OPENROUTER_API_KEY:
         "Please add it to your .env file."
     )
 
+if not OPENROUTER_API_KEY.startswith("sk-or-v1-"):
+    raise ValueError(
+        "OPENROUTER_API_KEY has an unexpected format. "
+        "Expected a key beginning with 'sk-or-v1-'. "
+        "Copy the key exactly from OpenRouter."
+    )
+
 
 # ===========================================
 # Configure OpenRouter Client
